@@ -1,0 +1,40 @@
+//bios
+.collection-bio{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  @media screen and (max-width:768px){
+    flex-direction:column;
+  }
+  .item{
+    cursor:pointer;
+    curosr:hand;
+    min-width:350px;
+    width:33.33%;
+    @media screen and (max-width:768px){
+      text-align:center;
+      width:100%;
+    }
+    margin-bottom:1.5em;
+    .content{
+      padding:0.5em;
+    }
+    .image-wrapper{
+      .image{       
+        height:277px;
+        width:100%;
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:left center;
+        @media screen and (max-width:768px){
+          background-position:center center;
+        }
+      }
+    }
+    .header{
+      line-height:1em;
+      padding:1em;
+      font-size:0.7em;
+    }
+  }
+}
